@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Item:</b>
+  <%= @item_userdream.item %>
+</p>
+
+<p>
+  <b>Dream:</b>
+  <%= @item_userdream.dream %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_userdream_path(@item_userdream) %> |
+<%= link_to 'Back', item_userdreams_path %>

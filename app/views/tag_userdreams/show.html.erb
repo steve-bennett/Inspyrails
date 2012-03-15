@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tag:</b>
+  <%= @tag_userdream.tag %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @tag_userdream.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_tag_userdream_path(@tag_userdream) %> |
+<%= link_to 'Back', tag_userdreams_path %>

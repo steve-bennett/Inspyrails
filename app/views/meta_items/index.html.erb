@@ -1,0 +1,27 @@
+<h1>Listing meta_items</h1>
+
+<table>
+  <tr>
+    <th>Meta key</th>
+    <th>Meta value</th>
+    <th>Item</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @meta_items.each do |meta_item| %>
+  <tr>
+    <td><%= meta_item.meta_key %></td>
+    <td><%= meta_item.meta_value %></td>
+    <td><%= meta_item.item %></td>
+    <td><%= link_to 'Show', meta_item %></td>
+    <td><%= link_to 'Edit', edit_meta_item_path(meta_item) %></td>
+    <td><%= link_to 'Destroy', meta_item, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Meta item', new_meta_item_path %>

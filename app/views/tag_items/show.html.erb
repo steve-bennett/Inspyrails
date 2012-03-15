@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tag:</b>
+  <%= @tag_item.tag %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%= @tag_item.item %>
+</p>
+
+
+<%= link_to 'Edit', edit_tag_item_path(@tag_item) %> |
+<%= link_to 'Back', tag_items_path %>

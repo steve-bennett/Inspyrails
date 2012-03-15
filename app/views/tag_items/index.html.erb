@@ -1,0 +1,25 @@
+<h1>Listing tag_items</h1>
+
+<table>
+  <tr>
+    <th>Tag</th>
+    <th>Item</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tag_items.each do |tag_item| %>
+  <tr>
+    <td><%= tag_item.tag %></td>
+    <td><%= tag_item.item %></td>
+    <td><%= link_to 'Show', tag_item %></td>
+    <td><%= link_to 'Edit', edit_tag_item_path(tag_item) %></td>
+    <td><%= link_to 'Destroy', tag_item, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tag item', new_tag_item_path %>

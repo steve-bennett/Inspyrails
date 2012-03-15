@@ -1,0 +1,25 @@
+<%= form_for(@item_userdream) do |f| %>
+  <% if @item_userdream.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item_userdream.errors.count, "error") %> prohibited this item_userdream from being saved:</h2>
+
+      <ul>
+      <% @item_userdream.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item %><br />
+    <%= f.text_field :item %>
+  </div>
+  <div class="field">
+    <%= f.label :dream %><br />
+    <%= f.text_field :dream %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

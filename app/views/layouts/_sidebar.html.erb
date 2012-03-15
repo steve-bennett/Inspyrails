@@ -1,0 +1,14 @@
+<div class="avatar">
+  <fb:profile-pic uid="<%= current_user.try(:identifier) %>" size="normal" facebook-logo="true"></fb:profile-pic>
+</div>
+
+<% if authenticated? %>
+  <p><%= link_to "Logout", facebook_path, :method => :delete %></p>
+<% else %>
+  <dl>
+        <dt>Normal OAuth flow</dt>
+    <dd><%= link_to "Start", new_facebook_path %></dd>
+  </dl>
+<% end %>
+
+<fb:like-box profile_id="284673261596331" width="300" connections="6"></fb:like-box>

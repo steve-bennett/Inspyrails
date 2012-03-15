@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Meta key:</b>
+  <%= @meta_item.meta_key %>
+</p>
+
+<p>
+  <b>Meta value:</b>
+  <%= @meta_item.meta_value %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%= @meta_item.item %>
+</p>
+
+
+<%= link_to 'Edit', edit_meta_item_path(@meta_item) %> |
+<%= link_to 'Back', meta_items_path %>

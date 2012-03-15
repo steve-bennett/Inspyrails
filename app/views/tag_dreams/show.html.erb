@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tag:</b>
+  <%= @tag_dream.tag %>
+</p>
+
+<p>
+  <b>Dream:</b>
+  <%= @tag_dream.dream %>
+</p>
+
+
+<%= link_to 'Edit', edit_tag_dream_path(@tag_dream) %> |
+<%= link_to 'Back', tag_dreams_path %>

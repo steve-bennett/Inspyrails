@@ -1,0 +1,22 @@
+#config/facebook.yml
+
+development: &defaults
+  app_id: 309788995752524
+  client_id: 309788995752524
+  client_secret: e422d025b9a1dee96a15339cdfccb13e
+  perms: offline_access,manage_pages
+  page_id: 284673261596331
+
+test: &defaults
+  app_id: 309788995752524
+  client_id: 309788995752524
+  client_secret: e422d025b9a1dee96a15339cdfccb13e
+  perms: offline_access,manage_pages
+  page_id: 284673261596331
+
+production: &defaults
+  app_id: 309788995752524
+  client_id: 309788995752524
+  client_secret: e422d025b9a1dee96a15339cdfccb13e
+  perms: offline_access,manage_pages
+  page_id: 284673261596331
